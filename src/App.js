@@ -1,11 +1,11 @@
 import React from 'react';
 import Title from './components/Title'
-
+import Transition from './components/Transition'
 
 function App() {
   return (
     <div>
-      <Title />
+      <Transition />
     </div>
   );
 }
