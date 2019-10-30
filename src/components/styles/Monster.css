@@ -1,0 +1,18 @@
+.Monster{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.Monster > img{
+  filter:drop-shadow(0 0 5px #666);
+  width: 150px;
+  height: 150px;
+}
+
+.Monster .Monster_name{
+  color: white;
+  padding-top: 15px;
+}
