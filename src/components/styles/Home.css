@@ -1,0 +1,10 @@
+.Home{
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+.Home_title{
+  color: red;
+  font-size: 3rem;
+}
