@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Monster from './Monster'
-
 import './styles/Home.css'
 
 class Home extends React.Component {

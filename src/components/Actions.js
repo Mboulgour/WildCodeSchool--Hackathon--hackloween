@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import ActionsHeader from './ActionsHeader'
 import Monster from './Monster'
 
 import './styles/Actions.css'
@@ -25,18 +26,19 @@ class Actions extends React.Component {
     )
   }
 
-  newSituation = () =>{
-    index += 1
+  componentDidMount(){
     this.getData()
   }
 
-  componentDidMount(){
+  newSituation = () =>{
+    index += 1
     this.getData()
   }
 
   render(){
     return(
       <div className='Actions'>
+        <ActionsHeader num={index}/>
         {this.state.data === undefined ? 
           <p>Loading...</p>
           :

@@ -1,0 +1,9 @@
+.ActionsHeader{
+  background: #666;
+  border: 1px solid #353535;
+  height: 25px;
+  width: 100vw;
+  color: white;
+  display: flex;
+  padding: 10px;
+}
