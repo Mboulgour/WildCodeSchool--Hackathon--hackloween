@@ -1,13 +1,13 @@
 import React from 'react'
 
-import './styles/Home.css'
+import Title from './Title'
 
 class Home extends React.Component {
 
   render(){
     return(
       <div className='Home'>
-        <h1 className="Home_title">Home</h1>
+        <Title />
       </div>
     )
   }

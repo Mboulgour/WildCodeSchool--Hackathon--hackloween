@@ -1,5 +1,7 @@
 import React from 'react';
-import Title from './components/Title'
+
+import { Route } from 'react-router-dom'
+
 import Home from './components/Home'
 import Actions from './components/Actions'
 

@@ -4,7 +4,7 @@
     margin: 0;
     font-family: "Slow Death";
     color: whitesmoke;
-    font-size: 38px;
+    font-size: 55px;
     padding-top: 24px;
 }
 
@@ -15,14 +15,14 @@
   height: 100vh;
   width: 100vw;
   text-align: center;
-  margin-left: 32px;
 }
 .video-game-button {
   text-shadow: 1px 1px pink, -1px -1px maroon;
-
+  display: flex;
   line-height: 1.5em;
   text-align: center;
   display: inline-block;
+  align-self: flex-end;
   width: 1.5em;
   -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
@@ -49,7 +49,7 @@
     red 22%,
     maroon 99%
   );
-  background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  background-image: linear-gradient(to left top, pink 3%, red 22%, maroon 99%);
   cursor: pointer;
   padding-left: 5px;
 }
@@ -69,7 +69,7 @@
   box-shadow: 0 0.2em gray;
   cursor: pointer;
   z-index: 100;
-  margin-top: 23px;
+  margin-top: 40px;
 }
 .video-game-button:active,
 .start-btn:active {
@@ -80,5 +80,5 @@
 
 .titleBg {
   opacity: 0.5;
-  margin-top: 12px;
+  margin-top: 25px;
 }
