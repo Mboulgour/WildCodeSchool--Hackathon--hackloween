@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
 .Monster{
   display: flex;
   flex-direction: column;
@@ -14,6 +16,38 @@
 }
 
 .Monster .Monster_name{
+  font-family: "Press Start 2P";
+  font-size: 12px;
   color: white;
   padding-top: 15px;
+}
+
+.Hero{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.Hero > img{
+  filter:drop-shadow(0 0 5px #666);
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.Hero .Hero_name{
+  font-family: "Press Start 2P";
+  font-size: 12px;
+  color: white;
+  padding-top: 15px;
+}
+
+.Choices{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px;
 }
