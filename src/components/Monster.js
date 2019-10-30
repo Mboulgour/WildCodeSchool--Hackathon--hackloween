@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Monster = () =>{
+import './styles/Monster.css'
+
+const Monster = (props) =>{
     return(
-      <div>
-      
+      <div className="Monster">
+        <img src={require(`../images/${props.data}.png`)} />
+        <p className="Monster_name">{props.name}</p>
       </div>
     )
   }
-
 
 export default Monster
