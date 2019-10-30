@@ -7,6 +7,6 @@ const Monster = () =>{
       </div>
     )
   }
-}
+
 
 export default Monster
