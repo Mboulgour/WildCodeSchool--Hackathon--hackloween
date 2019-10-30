@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom'
-
+import Title from './components/Title'
 import Home from './components/Home'
 import Actions from './components/Actions'
 
