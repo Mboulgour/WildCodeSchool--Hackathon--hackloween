@@ -5,7 +5,7 @@ const MainCharacter = () => {
   return(
     <div className="Hero">
       <img src={require(`../images/main.png`)} alt="Our beautiful hero"/>
-      <p className="Hero_name">Doggo</p>
+      <p className="Hero_name">A brave hero</p>
     </div>
   )
 }
