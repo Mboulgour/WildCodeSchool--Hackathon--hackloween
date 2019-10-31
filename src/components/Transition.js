@@ -6,9 +6,12 @@ class Transition extends React.Component {
     render() {
         return (
 
-            <main className="main-content ">
+ 
+            <main className="transitionmain-content">
                 
                 <img className="transitionBg" src="/mountain.jpg"></img>
+
+            
                 {/* BACKGROUND CHATEAU 
                 <img className="transitionBg" src="/castle.jpg"></img> */}
                 {/* BACKGROUND CIMETIERRE 
@@ -16,7 +19,7 @@ class Transition extends React.Component {
                 {/* BACKGROUND ENFER 
                 <img className="transitionBg" src="/hell.jpg"></img> */}
 
-                    <span className="main-title ">
+                    <span className="transitionmain-title">
                         
                         "Vous vous réveillez soudain dans un monde onirique et
             horrifique, dans lequel la normalité est un paramètre inconnu.
@@ -26,8 +29,8 @@ class Transition extends React.Component {
             un peu plus profond dans vos propres abysses."
                     </span>
 
-                <canvas className="noise vignette"></canvas>
-                <Link to="/actions"><span className='start-btn'>OK</span></Link>
+                <canvas className="transitionnoise transitionvignette"></canvas>
+                {/* <Link to="/actions"><span className='start-btn'>OK</span></Link> */}
             </main>
 
 
