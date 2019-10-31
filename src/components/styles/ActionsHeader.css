@@ -1,13 +1,18 @@
-.ActionsHeader{
-  background: #666;
-  border: 1px solid #353535;
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+.ActionsHeader {
+  border: 1px solid rgba(255, 0, 0, 0.699);
   height: 25px;
-  color: white;
+  color: snow;
   display: flex;
   padding: 10px;
   margin: O;
+  background-color: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(5px);
+  filter:drop-shadow(8px 8px 10px rgba(238, 9, 9, 0.493));
 }
 
 .ActionsHeader > p {
   align-self: center;
+  font-family: "Press Start 2P";
 }
