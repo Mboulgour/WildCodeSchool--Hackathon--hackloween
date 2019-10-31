@@ -49,8 +49,8 @@ class Actions extends React.Component {
         <div><p>lalalalalalalalalal</p></div>
         <MainCharacter />
         <div className="Choices">
-          <button onClick={this.newSituation}>Next Monster</button>
-          <Link exact to="/"><button>Bad choice</button></Link>
+          <button onClick={this.newSituation}><Link to="/transition">Next Monster</Link></button>
+          <Link exact to="/"><button>Bad choice</button></Link> 
         </div>
       </div>
     )
