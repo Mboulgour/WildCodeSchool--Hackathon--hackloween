@@ -10,7 +10,7 @@
 
 .titleBody {
   background-color: black;
-  font-size: 30pt;
+  font-size: 20pt;
   font-family: "Press Start 2p";
   height: 100vh;
   width: 100vw;
@@ -69,7 +69,7 @@
   box-shadow: 0 0.2em gray;
   cursor: pointer;
   z-index: 100;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .video-game-button:active,
 .start-btn:active {
