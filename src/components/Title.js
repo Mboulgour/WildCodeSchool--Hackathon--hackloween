@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import './styles/Title.css'
 
 class Title extends React.Component {
@@ -6,10 +8,9 @@ class Title extends React.Component {
         return (
             <div className="titleBody">
                 <p className="titleTitle">PURGE INTO FLAMES</p>
-                <img className='titleBg' src={'/transparent-flame-8-bit-4.gif'} /> 
-                <span className='start-btn'>START</span>
+                <img className='titleBg' src={'/transparent-flame-8-bit-4.gif'} alt="Burning flames" /> 
+                <Link to="/actions"><span className='start-btn'>START</span></Link>
             </div>
-
         )
 
     }

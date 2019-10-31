@@ -1,16 +1,16 @@
 import React from 'react'
 
-import Monster from './Monster'
+import Title from './Title'
 
-import './styles/Home.css'
+class Home extends React.Component {
 
-const Home = () => {
-  return(
-    <div className='Home'>
-      <h1 className="Home_title">SISI LA FAMILLE</h1>
-      <Monster data= {1} />
-    </div>
-  )
+  render(){
+    return(
+      <div className='Home'>
+        <Title />
+      </div>
+    )
+  }
 }
 
 export default Home

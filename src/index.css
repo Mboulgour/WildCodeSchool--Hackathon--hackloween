@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+*{
+  margin:0;
+}
+
+@font-face
+{
+    font-family: 'Slow Death';
+    src: url(/SlowDeath.ttf);
+}
