@@ -70,10 +70,6 @@
   cursor: pointer;
   z-index: 100;
   margin-top: 30px;
-<<<<<<< HEAD
-=======
-  font-size: 1em;
->>>>>>> 730edbff366a239a611c3414397a200c6e420f05
 }
 .video-game-button:active,
 .start-btn:active {
