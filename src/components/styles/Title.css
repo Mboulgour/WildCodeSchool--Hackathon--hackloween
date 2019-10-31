@@ -69,7 +69,8 @@
   box-shadow: 0 0.2em gray;
   cursor: pointer;
   z-index: 100;
-  margin-top: 40px;
+  margin-top: 30px;
+  font-size: 1em;
 }
 .video-game-button:active,
 .start-btn:active {
