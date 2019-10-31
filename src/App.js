@@ -10,9 +10,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Route exact path="/" component={Home} />
-      <Route path="/transition" component={Transition} />
-      <Route path="/actions" component={Actions} />
+      <Transition />
     </div>
   );
 }
