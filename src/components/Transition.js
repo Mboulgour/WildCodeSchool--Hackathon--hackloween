@@ -30,7 +30,7 @@ class Transition extends React.Component {
                     </span>
 
                 <canvas className="transitionnoise transitionvignette"></canvas>
-                {/* <Link to="/actions"><span className='start-btn'>OK</span></Link> */}
+                <Link to="/actions" className='start-btn'>OK</Link>
             </main>
 
 
