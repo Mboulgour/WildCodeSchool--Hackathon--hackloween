@@ -23,7 +23,7 @@ class Transition extends React.Component {
                         en rencontre. Finalement, vous semblez vous-même vous enfoncer     
                         un peu plus profond dans vos propres abysses."
                     </span>
-                    <Link to="/actions" className="start-btn">OK</Link>
+                    <Link to="/actions" className="transition-start-btn">OK</Link>
                     <canvas className="transitionnoise transitionvignette"></canvas>
                     
                 </main>
