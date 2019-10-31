@@ -1,7 +1,11 @@
 .Actions{
   width: 100vw;
   height: 100vh;
-  background: black;
   display: flex;
   flex-direction: column;
+}
+
+.best-btn{
+  position: absolute;
+  bottom: 50px;
 }

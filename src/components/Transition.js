@@ -8,12 +8,6 @@ class Transition extends React.Component {
             <div>
                 <main className="transitionmain-content">
                     <img className="transitionBg" src="/mountain.jpg"></img>
-                    {/* BACKGROUND CHATEAU 
-                    <img className="transitionBg" src="/castle.jpg"></img> */}
-                    {/* BACKGROUND CIMETIERRE 
-                    <img className="transitionBg" src="/cemetery.jpg"></img> */}
-                    {/* BACKGROUND ENFER 
-                    <img className="transitionBg" src="/hell.jpg"></img> */}
                     
                     <span className="transitionmain-title"> 
                         "Vous vous réveillez soudain dans un monde onirique et

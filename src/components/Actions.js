@@ -8,6 +8,7 @@ import TransitionTest from './TransitionTest'
 
 import './styles/Actions.css'
 
+
 const situations = [
   {
     id: 4,
@@ -149,6 +150,7 @@ const situations = [
     image: 4,
   },
 ] // Array of different monsters/situations
+
 let index = 0 // Index to use when appending a specific monster
 
 class Actions extends React.Component {
@@ -170,22 +172,24 @@ class Actions extends React.Component {
     )
   }
 
-  componentDidMount(){ // Getting data when component is mounted and render the monster thanks to index in situations array
-    index = 0 // Resetting index when coming from another component (like home)
-    this.getData()
+  componentDidMount() {
+    console.log(index)
   }
 
   newSituation = () =>{
-    index += 1 // When user is clicking on a good choice, iterating through array of monsters/level/messages
+     // When user is clicking on a good choice, iterating through array of monsters/level/messages
     this.getData()
+    console.log(index)
   }
 
   newTransition = () =>{
+      index +=1
       this.setState({
       monster: false
     })
   }
 
+  
   render(){
     return(
       <div className='Actions'>
@@ -195,15 +199,17 @@ class Actions extends React.Component {
           <Monster data={this.state.data.monster.id} name={this.state.data.monster.name}/>
           <MainCharacter />
           <div className="Choices">
-            <a onClick={this.newTransition}>Next Monster</a>
-            <Link exact to="/">Bad choice</Link>
+            <a onClick={this.newTransition}>{situations[index].bouton1}</a>
+            <Link exact to="/">{situations[index].bouton2}</Link>
           </div>
         </div>
         :
-          <div>
-            <TransitionTest transition={situations[index].text}/>
-            <a onClick={this.newSituation}>Next Monster</a>
+        <div>
+          <TransitionTest transition={situations[index].text} img={situations[index].image}/>
+          <div className="Choices">
+            <a className="best-btn" onClick={this.newSituation}>Next Monster</a>
           </div>
+        </div>
         }
       </div>
     )
