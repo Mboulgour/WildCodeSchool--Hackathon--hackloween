@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './styles/Transition.css'
 
 class Transition extends React.Component {
@@ -6,8 +7,8 @@ class Transition extends React.Component {
         return (
 
             <main className="main-content ">
-                {/* BACKGROUND MONTAGNE 
-                <img className="transitionBg" src="/mountain.jpg"></img> */}
+                
+                <img className="transitionBg" src="/mountain.jpg"></img>
                 {/* BACKGROUND CHATEAU 
                 <img className="transitionBg" src="/castle.jpg"></img> */}
                 {/* BACKGROUND CIMETIERRE 
@@ -26,7 +27,7 @@ class Transition extends React.Component {
                     </span>
 
                 <canvas className="noise vignette"></canvas>
-  
+                <Link to="/actions"><span className='start-btn'>OK</span></Link>
             </main>
 
 
