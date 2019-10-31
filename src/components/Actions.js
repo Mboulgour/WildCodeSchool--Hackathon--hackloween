@@ -7,7 +7,7 @@ import Monster from './Monster'
 
 import './styles/Actions.css'
 
-const situations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] // Array of different monsters/situations
+const situations = [4, 8, 9, 1, 10, 3, 11, 6, 12, 2, 13, 5, 14, 7, 19, 20, 16, 18, 15, 17] // Array of different monsters/situations
 let index = 0 // Index to use when appending a specific monster
 
 class Actions extends React.Component {
@@ -46,6 +46,7 @@ class Actions extends React.Component {
           :
           <Monster data={this.state.data.monster.id} name={this.state.data.monster.name}/>
         }
+        <div><p>lalalalalalalalalal</p></div>
         <MainCharacter />
         <div className="Choices">
           <button onClick={this.newSituation}>Next Monster</button>

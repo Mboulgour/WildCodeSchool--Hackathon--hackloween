@@ -1,12 +1,13 @@
 import React from 'react'
 
-import './styles/Monster.css'
+import './styles/MainCharacter.css'
+
 const MainCharacter = () => {
   return(
-    <div className="Hero">
-      <img src={require(`../images/main.png`)} alt="Our beautiful hero"/>
-      <p className="Hero_name">A brave hero</p>
-    </div>
+      <div className="Hero">
+        <img src={require(`../images/main.png`)} alt="Our beautiful hero"/>
+        <p className="Hero_name">A brave hero</p>
+      </div>
   )
 }
 
