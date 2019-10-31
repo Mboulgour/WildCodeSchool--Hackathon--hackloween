@@ -5,7 +5,7 @@ class Transition extends React.Component {
     render() {
         return (
 
-            <main className="main-content ">
+            <main className="main-content">
                 {/* BACKGROUND MONTAGNE 
                 <img className="transitionBg" src="/mountain.jpg"></img> */}
                 {/* BACKGROUND CHATEAU 
