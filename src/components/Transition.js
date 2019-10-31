@@ -6,9 +6,12 @@ class Transition extends React.Component {
     render() {
         return (
 
+ 
             <main className="transitionmain-content">
                 
                 <img className="transitionBg" src="/mountain.jpg"></img>
+
+            
                 {/* BACKGROUND CHATEAU 
                 <img className="transitionBg" src="/castle.jpg"></img> */}
                 {/* BACKGROUND CIMETIERRE 
@@ -27,7 +30,7 @@ class Transition extends React.Component {
                     </span>
 
                 <canvas className="transitionnoise transitionvignette"></canvas>
-                <Link to="/actions"><span className='start-btn'>OK</span></Link>
+                {/* <Link to="/actions"><span className='start-btn'>OK</span></Link> */}
             </main>
 
 
