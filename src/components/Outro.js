@@ -25,7 +25,6 @@ class Outro extends React.Component {
                        pas à la Mort.
                        FIN"
                     </span>
-                    <Link to="/actions" className="outro-start-btn">OK</Link>
                     <canvas className="outronoise outrovignette"></canvas>
                     
                 </main>

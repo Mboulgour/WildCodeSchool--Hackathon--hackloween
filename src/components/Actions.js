@@ -5,8 +5,10 @@ import ActionsHeader from './ActionsHeader'
 import MainCharacter from './MainCharacter'
 import Monster from './Monster'
 import TransitionTest from './TransitionTest'
+import Outro from './Outro'
 
 import './styles/Actions.css'
+import { tsUndefinedKeyword } from '@babel/types'
 
 
 const situations = [
@@ -151,7 +153,7 @@ const situations = [
   },
 ] // Array of different monsters/situations
 
-let index = 0 // Index to use when appending a specific monster
+let index = 0// Index to use when appending a specific monster
 
 class Actions extends React.Component {
   state = {
@@ -159,6 +161,7 @@ class Actions extends React.Component {
     text: undefined,
     background: undefined,
     monster: undefined,
+    outro: undefined,
   }
 
   
@@ -183,7 +186,13 @@ class Actions extends React.Component {
   }
 
   newTransition = () =>{
-      index +=1
+      if (index >= 19){
+        this.setState({
+          outro: true
+        })
+      } else {
+        index +=1
+      }
       this.setState({
       monster: false
     })
@@ -193,24 +202,25 @@ class Actions extends React.Component {
   render(){
     return(
       <div className='Actions'>
-        { this.state.monster ?
-        <div>
-          <ActionsHeader num={index}/>
-          <Monster data={this.state.data.monster.id} name={this.state.data.monster.name}/>
-          <MainCharacter />
-          <div className="Choices">
-            <a onClick={this.newTransition}>{situations[index].bouton1}</a>
-            <Link exact to="/">{situations[index].bouton2}</Link>
+          { this.state.monster ?
+          <div>
+            <ActionsHeader num={index}/>
+            <Monster data={this.state.data.monster.id} name={this.state.data.monster.name}/>
+            <MainCharacter />
+            <div className="Choices">
+              <a onClick={this.newTransition}>{situations[index].bouton1}</a>
+              <Link exact to="/">{situations[index].bouton2}</Link>
+            </div>
           </div>
-        </div>
-        :
-        <div>
-          <TransitionTest transition={situations[index].text} img={situations[index].image}/>
-          <div className="Choices">
-            <a className="best-btn" onClick={this.newSituation}>Next Monster</a>
+          :
+          <div>
+            <TransitionTest transition={situations[index].text} img={situations[index].image}/>
+            <div className="Choices">
+              <a className="best-btn" onClick={this.newSituation}>Next Monster</a>
+            </div>
           </div>
-        </div>
-        }
+          }
+
       </div>
     )
   }
